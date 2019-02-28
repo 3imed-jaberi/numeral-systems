@@ -40,7 +40,7 @@ $your_pc_name_with_your_directory
 ```javascript
 let number  = 2019 ; 
 let typeResultNumerals = "Arabic";
-let result = ( number , typeResultNumerals ) ;
+let result = NS ( number , typeResultNumerals ) ;
 console.log(`*******\n ${result} \n*******`);
 ```
 
