@@ -1,0 +1,35 @@
+{
+  "name": "numeral-systems",
+  "version": "1.0.0",
+  "description": "the purpose of this module is to convert any type of numbers to other type you want ..",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3imed-jaberi/numeral-systems.git"
+  },
+  "keywords": [
+    "numerl-systems-convert",
+    "numbers",
+    "numerals",
+    "arabic",
+    "romain",
+    "persian",
+    "modern"
+  ],
+  "author": "imed jaberi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3imed-jaberi/numeral-systems/issues"
+  },
+  "homepage": "https://github.com/3imed-jaberi/numeral-systems#readme"
+}
