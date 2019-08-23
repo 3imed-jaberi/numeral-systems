@@ -2,6 +2,10 @@
 ---
 ![imed-jaberi](logo.png) 
 
+[![Build Status](https://travis-ci.org/3imed-jaberi/numeral-systems.svg?branch=master)](https://travis-ci.org/3imed-jaberi/numeral-systems)
+
+[![Coverage Status](https://coveralls.io/repos/github/3imed-jaberi/numeral-systems/badge.svg?branch=master)](https://coveralls.io/github/3imed-jaberi/numeral-systems?branch=master)
+
 #### The purpose of this module is to convert any type of numbers to other type you want ..  
 
 ###### **`NOTE:`** you can send to me for add other type in [instgram](https://www.instagram.com/3imed_jaberi/) ..
