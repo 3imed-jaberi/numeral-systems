@@ -1,6 +1,6 @@
 {
   "name": "numeral-systems",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "the purpose of this module is to convert any type of numbers to other type you want ..",
   "main": "index.js",
   "directories": {
@@ -8,17 +8,10 @@
     "test": "test"
   },
   "devDependencies": {
-    "mocha": "^5.2.0",
-    "coveralls": "^3.0.6",
-    "istanbul": "^0.4.5"
+    "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec",
-    "ci": "npm run cover",
-    "postversion": "git push && git push --tags",
-    "prepublishOnly": "npm run ci",
-    "preversion": "npm run ci"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
