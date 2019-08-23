@@ -1,6 +1,6 @@
 # NUMERAL SYSTEMS - converts numbers by numerals system types ..
 ---
-![imed-jaberi](/lib/images/logo.png) 
+![imed-jaberi](logo.png) 
 
 #### The purpose of this module is to convert any type of numbers to other type you want ..  
 
@@ -17,32 +17,41 @@ $ npm install numeral-systems
 ## Usage 
 ---
 The method of use is simple and very easy ... Just follow these steps :
-Step 1 : Import the module in this way .
+
+Step 1 : Import the module in this way.
+
 ```javascript
 const NS = require ('numeral-systems') ;
 ```
-Step 2 : Enter the number to the function with the type of result number you want .
+
+Step 2 : Enter the number to the function with the type of result number you want.
+
 ```javascript
 let number  = "2019" ;
 let typeResultNumerals = "Arabic";
 let result = NS ( number , typeResultNumerals ) ;
 console.log(`*******\n ${result} \n*******`);
 ```
+
 Step 3 : Execute method to see the result ..
+
 ```bash
 $your_pc_name_with_your_directory
 *******
  ۲۰۱۹
 *******
 ```
+
 #### **`NOTE:`** in case the number is a modern type , you can enter the number to the function in number type .. so the step 2 will be : 
 
 ```javascript
-let number  = 2019 ; 
+/* ===> */ let number  = 2019 ; /* <=== */
 let typeResultNumerals = "Arabic";
 let result = NS ( number , typeResultNumerals ) ;
 console.log(`*******\n ${result} \n*******`);
 ```
+
+###### You can check the test folder for all possible cases.
 
 ## Some Informations : 
 ---
