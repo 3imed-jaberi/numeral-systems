@@ -1,6 +1,6 @@
 {
   "name": "numeral-systems",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "the purpose of this module is to convert any type of numbers to other type you want ..",
   "main": "index.js",
   "directories": {
@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "mocha": "^5.2.0",
+    "chai": "^4.2.0",
     "coveralls": "^3.0.6",
     "istanbul": "^0.4.5"
   },
