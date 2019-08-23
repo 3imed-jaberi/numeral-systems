@@ -3,10 +3,6 @@
   "version": "1.2.0",
   "description": "the purpose of this module is to convert any type of numbers to other type you want ..",
   "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
   "devDependencies": {
     "mocha": "^5.2.0",
     "chai": "^4.2.0",
