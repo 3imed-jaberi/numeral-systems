@@ -10,6 +10,7 @@
 
 ###### **`NOTE:`** you can send to me for add other type in [instgram](https://www.instagram.com/3imed_jaberi/) ..
 
+
 ## Installation 
 ---
 
@@ -17,6 +18,12 @@
 ```bash
 $ npm install numeral-systems
 ```
+
+- YARN :
+```bash
+$ yarn add numeral-systems
+```
+
 
 ## Usage 
 ---
@@ -33,7 +40,7 @@ Step 2 : Enter the number to the function with the type of result number you wan
 ```javascript
 let number  = "2019" ;
 let typeResultNumerals = "Arabic";
-let result = NS ( number , typeResultNumerals ) ;
+let result = NS (number, typeResultNumerals) ;
 console.log(`*******\n ${result} \n*******`);
 ```
 
@@ -51,11 +58,12 @@ $your_pc_name_with_your_directory
 ```javascript
 /* ===> */ let number  = 2019 ; /* <=== */
 let typeResultNumerals = "Arabic";
-let result = NS ( number , typeResultNumerals ) ;
+let result = NS (number, typeResultNumerals) ;
 console.log(`*******\n ${result} \n*******`);
 ```
 
 ###### You can check the test folder for all possible cases.
+
 
 ## Some Informations : 
 ---
@@ -67,7 +75,7 @@ In this module we have 4 numerals systems. You can convert between them  ..
 
 **`NOTE:`** Al-Khwarizmi put the modern numeral system for that is considered the original Arabic and this for the scientific secretariat, but we relied on the Arabic numerals very old under the name "Arabic" and the numerls  system developed by Al-Khwarizmi "modern" ...
 
+
 #### License
 ---
 [MIT](https://choosealicense.com/licenses/mit/) 
-
