@@ -1,4 +1,2 @@
-
-const main = require ('./src/main');
-
-module.exports = main ;
+/* root package 🤿 */
+module.exports = require ('./src/main') ;
