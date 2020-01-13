@@ -4,7 +4,7 @@ const { DecimalToRomain , RomainToDecimal } = require ('./convert-romain-functio
 
 const convert = ( number , typeResultNumerals ) => {
        // for updted methode recrusive ... 
-              number = number.toString() ;
+       number = `${number}`;
                
           // number = Number(number); // convert to number
           // number = number.toString(); // convert to string
