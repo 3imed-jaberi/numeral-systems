@@ -1,6 +1,6 @@
 
-const convert = require('./numeral-system-convert');
-const validationInputNumerals = require ('./validation-input-number');
+const convert = require('./core/numeralSystemConvert');
+const validationInputNumerals = require ('./validation');
 
 const main = ( number , typeResultNumerals ) => {
           // validate the number .. // you cna passing number or string

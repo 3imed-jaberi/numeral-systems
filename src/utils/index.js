@@ -1,5 +1,5 @@
 
-const getBaseNumerals = require ('./base-numerals');
+const getBaseNumerals = require ('../data');
 
 const detectedType = (number , type) => {
         let detectedResult = [] ; 
