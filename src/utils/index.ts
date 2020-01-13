@@ -29,4 +29,4 @@ const detecteNumeralTypeOfInput = (number: string) => {
 };
 
 
-export default { detecteNumeralTypeOfInput };
+export default detecteNumeralTypeOfInput;

@@ -1,34 +1,27 @@
-const getBaseNumerals = require('../data');
-const detecteNumeralTypeOfInput = require ('../utils');
-const { DecimalToRomain } = require ('./decimalToRomain');
-const { RomainToDecimal } = require ('./romainToDecimal');
+import getBaseNumerals from '../data';
+import detecteNumeralTypeOfInput from'../utils';
+import { DecimalToRomain } from './decimalToRomain';
+import { RomainToDecimal } from './romainToDecimal';
 
 
 
-const convert = ( number , typeResultNumerals ) => {
-       // for updted methode recrusive ... 
-       number = `${number}`;
-               
-       // number = Number(number); // convert to number
-       // number = number.toString(); // convert to string
+const convert = (number:string, typeResultNumerals:string): string => {
               
        if ( (typeResultNumerals.toLowerCase() === 'romain') && (detecteNumeralTypeOfInput(number) !== 'romain') ) {
-              if ( ( Number(number) < 1 ) || (Number(number) > 3999) ) {
+              if ( ( +number < 1 ) || (+number > 3999) ) {
                      return 'Error .. invalid romain number < the numbers should be in [  1 .. 3999 ] >' ;
               }else{
                      number = convert(number , 'modern');
                             // convertion ... 
-                     return DecimalToRomain(number);
+                     return DecimalToRomain(+number);
               }
        }else if (detecteNumeralTypeOfInput(number) === 'romain') {
               if (typeResultNumerals.toLowerCase() === 'modern') {
-                     return RomainToDecimal(number);
+                     return `${RomainToDecimal(number)}`;
               } else if (typeResultNumerals.toLowerCase() === 'arabic') {
-                     let newDecNumber = RomainToDecimal(number) ;
-                     return convert(newDecNumber , 'arabic');
+                     return convert(`${RomainToDecimal(number)}` , 'arabic');
               } else if (typeResultNumerals.toLowerCase() === 'persian') {
-                     let newDecNumber = RomainToDecimal(number) ;
-                     return convert(newDecNumber , 'persian');
+                     return convert(`${RomainToDecimal(number)}` , 'persian');
               } else {
                      return number ;
               }        
@@ -40,22 +33,22 @@ const convert = ( number , typeResultNumerals ) => {
               // array of the number .. 
               let inputNumber = number.split('');
               // array of each chiffre in the input number .. 
-              let IndexTAB = [];
+              let IndexTAB: number[] = [];
               // put the same number in the new array .. 
-              let arrayConvertNumber = [] ;
+              let arrayConvertNumber: number[] = [] ;
               // get the index of each chiffre in the input number .. 
               inputNumber.forEach( element => {
-                    typeInputNumber.forEach( ( value , index ) => {
-                              (element === value) ? IndexTAB.push(index) : null ;       
+                    typeInputNumber.forEach((value: any, index: number): void => {
+                        (element === value) ? IndexTAB.push(index) : null ;       
                     });
               });
               //
-              IndexTAB.forEach( element => arrayConvertNumber.push(typeResultConvert[element]) )
+              IndexTAB.forEach( element => arrayConvertNumber.push(+typeResultConvert[element]) )
               // translate the new array number to string .. 
-                    return arrayConvertNumber.join('');
+              return arrayConvertNumber.join('');
        }
 
 };
 
 
-module.exports = convert;
+export default convert;
