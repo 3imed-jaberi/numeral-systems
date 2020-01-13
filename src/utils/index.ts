@@ -3,12 +3,12 @@ import getBaseNumerals from '../data';
 
 
 const detectedType = (number: string, type: string) => {
-    let detectedResult: string[] = [] ; 
+    let detectedResult: any[] = [] ; 
 
     (number.split('')).forEach(element => {
-            let res = getBaseNumerals(type).filter( (value: string) => value === element );
-            if ( res.length !== 0 ) {
-            detectedResult.push(res) ;
+            let res = (getBaseNumerals(type) as Array<string[] | string[][]>).filter((value) => (typeof value === 'string' && value === element));
+            if (res.length !== 0) {
+                detectedResult.push(res) ;
             } 
     });
 

@@ -7,7 +7,7 @@ const DecimalToRomain = (number: number): string => {
   i = 0;
       
   while(number){  //repeat process until number is not 0 ..
-    while(parseInt(number/decimal[i])){  //first base value that divides number is largest base value ..
+    while(parseInt(`${(number/decimal[i])}`)){  //first base value that divides number is largest base value ..
       result.push(symbol[i]);  //print roman symbol equivalent to largest base value ..
       number -= decimal[i];  //subtract largest base value from number ..
     }

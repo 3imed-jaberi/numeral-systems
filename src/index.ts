@@ -12,4 +12,4 @@ const main = (number: string, typeResultNumerals: string) => {
 };
 
 
-export default main;
+export { main };
