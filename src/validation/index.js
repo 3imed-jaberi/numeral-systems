@@ -1,4 +1,4 @@
-const getBaseNumerals = require('./base-numerals');
+const getBaseNumerals = require('../data');
 
 const validationInputNumerals = (number) => {
 

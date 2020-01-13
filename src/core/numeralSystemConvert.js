@@ -1,6 +1,9 @@
-const getBaseNumerals = require('./base-numerals');
-const detecteNumeralTypeOfInput = require ('./detected-type-input');
-const { DecimalToRomain , RomainToDecimal } = require ('./convert-romain-functions');
+const getBaseNumerals = require('../data');
+const detecteNumeralTypeOfInput = require ('../utils');
+const { DecimalToRomain } = require ('./decimalToRomain');
+const { RomainToDecimal } = require ('./romainToDecimal');
+
+
 
 const convert = ( number , typeResultNumerals ) => {
        // for updted methode recrusive ... 
