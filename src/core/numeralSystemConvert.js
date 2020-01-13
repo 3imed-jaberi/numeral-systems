@@ -9,8 +9,8 @@ const convert = ( number , typeResultNumerals ) => {
        // for updted methode recrusive ... 
        number = `${number}`;
                
-          // number = Number(number); // convert to number
-          // number = number.toString(); // convert to string
+       // number = Number(number); // convert to number
+       // number = number.toString(); // convert to string
               
        if ( (typeResultNumerals.toLowerCase() === 'romain') && (detecteNumeralTypeOfInput(number) !== 'romain') ) {
               if ( ( Number(number) < 1 ) || (Number(number) > 3999) ) {
@@ -57,4 +57,5 @@ const convert = ( number , typeResultNumerals ) => {
 
 };
 
-module.exports = convert ;
+
+module.exports = convert;
