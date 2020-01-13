@@ -1,5 +1,5 @@
 
-exports.RomainToDecimal = ( number ) => {
+const RomainToDecimal = (number: string): number => {
 
   let decimal = [1,5,10,50,100,500,1000], //base values
   symbol = ['I','V','X','L','C','D','M'], //roman symbols
@@ -32,3 +32,6 @@ exports.RomainToDecimal = ( number ) => {
 
   return res;
 };
+
+
+export { RomainToDecimal };

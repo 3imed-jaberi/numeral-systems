@@ -1,4 +1,5 @@
-const getBaseNumerals = (typeResultNumber) => {
+
+const getBaseNumerals = (typeResultNumber: string) => {
   switch (typeResultNumber.toLowerCase()) {
     case 'persian' : {
       return ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'] ;
@@ -22,4 +23,4 @@ const getBaseNumerals = (typeResultNumber) => {
   }
 };
 
-module.exports = getBaseNumerals;
+export default getBaseNumerals;
