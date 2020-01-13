@@ -2,7 +2,7 @@ const getBaseNumerals = require('./base-numerals');
 
 const validationInputNumerals = (number) => {
 
-          number = number.toString();
+          number = `${number}`;
           // get all numerals in one table .. 
           // 1st methode but not support in NODE JS V 10.15.0 ... 
                     // let allNumeralsSystem = getBaseNumerals('ALL').flat();
