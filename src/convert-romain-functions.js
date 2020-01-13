@@ -3,7 +3,7 @@ exports.DecimalToRomain = (number) => {
 
    let result = [];
    let decimal = [1000,900,500,400,100,90,50,40,10,9,5,4,1] ; //base values
-   let symbol = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"] ; //roman symbols
+   let symbol = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'] ; //roman symbols
    let i = 0;
        
           while(number){ //repeat process until num is not 0
@@ -14,13 +14,13 @@ exports.DecimalToRomain = (number) => {
               i++;    //move to next base value to divide num
           }
 
-   return result.join("") ;
+   return result.join('') ;
    
 };
 
 exports.RomainToDecimal = ( number ) => {
           let decimal = [1,5,10,50,100,500,1000] ; //base values
-          let symbol = ["I","V","X","L","C","D","M"] ; //roman symbols
+          let symbol = ['I','V','X','L','C','D','M'] ; //roman symbols
           // Initialize result
           let res = 0;
           // Traverse given input
