@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const package = require('../src/main') ; 
+const package = require('../index') ; 
 
 
 describe(
