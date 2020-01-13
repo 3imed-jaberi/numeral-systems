@@ -11,13 +11,13 @@ const convert = ( number , typeResultNumerals ) => {
               
        if ( (typeResultNumerals.toLowerCase() === 'romain') && (detecteNumeralTypeOfInput(number) !== 'romain') ) {
               if ( ( Number(number) < 1 ) || (Number(number) > 3999) ) {
-                     return "Error .. invalid romain number < the numbers should be in [  1 .. 3999 ] >" ;
+                     return 'Error .. invalid romain number < the numbers should be in [  1 .. 3999 ] >' ;
               }else{
-                     number = convert(number , "modern");
+                     number = convert(number , 'modern');
                             // convertion ... 
                      return DecimalToRomain(number);
               }
-       }else if (detecteNumeralTypeOfInput(number) === "romain") {
+       }else if (detecteNumeralTypeOfInput(number) === 'romain') {
               if (typeResultNumerals.toLowerCase() === 'modern') {
                      return RomainToDecimal(number);
               } else if (typeResultNumerals.toLowerCase() === 'arabic') {
@@ -35,7 +35,7 @@ const convert = ( number , typeResultNumerals ) => {
               // set the dedected input type in array .. 
               let typeInputNumber = getBaseNumerals(detecteNumeralTypeOfInput(number)) ;   
               // array of the number .. 
-              let inputNumber = number.split("");
+              let inputNumber = number.split('');
               // array of each chiffre in the input number .. 
               let IndexTAB = [];
               // put the same number in the new array .. 
@@ -49,7 +49,7 @@ const convert = ( number , typeResultNumerals ) => {
               //
               IndexTAB.forEach( element => arrayConvertNumber.push(typeResultConvert[element]) )
               // translate the new array number to string .. 
-                    return arrayConvertNumber.join("");
+                    return arrayConvertNumber.join('');
        }
 
 };
