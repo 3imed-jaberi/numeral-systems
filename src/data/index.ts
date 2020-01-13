@@ -23,4 +23,5 @@ const getBaseNumerals = (typeResultNumber: string) => {
   }
 };
 
+
 export default getBaseNumerals;
