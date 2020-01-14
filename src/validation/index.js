@@ -1,4 +1,4 @@
-const getBaseNumerals = require('../data');
+const { getBaseNumerals } = require('../utils');
 
 
 
