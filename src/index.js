@@ -1,15 +1,10 @@
 const convert = require('./core/numeralSystemConvert');
 const validationInputNumerals = require ('./validation');
+const { __ERROR_INVALID__ } = require('./constants');
 
 
 
-const main = (number, typeResultNumerals ) => {
-  // validate the number .. // you cna passing number or string
-  if (validationInputNumerals(number) === -1) {
-    return new Error('Error .. invalid number !!').message;
-  }  
+const main = (number, typeResultNumerals ) => (validationInputNumerals(number) === -1) ? new Error(__ERROR_INVALID__).message : convert(number,typeResultNumerals);
 
-  return convert(number,typeResultNumerals);
-};
 
-module.exports = main ;
+module.exports = main;

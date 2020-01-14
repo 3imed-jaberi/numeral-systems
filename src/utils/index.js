@@ -3,6 +3,21 @@ const { __ARABIC__, __MODERN__, __PERSIAN__,  __ROMAIN__ } = require('../constan
 
 
 
+// ___ private use .. ___ //
+const detectedType = (number, type) => {
+  let detectedResult = [] ; 
+  (number.split('')).forEach(element => {
+    let res = getBaseNumerals(type).filter( value => value === element );
+    if ( res.length !== 0 ) {
+    detectedResult.push(res) ;
+    } 
+  });
+  
+  return detectedResult ;
+};
+// _____________________ //
+
+
 const getBaseNumerals = (typeResultNumber) => {
   switch (typeResultNumber) {
     case __PERSIAN__: {
@@ -22,21 +37,6 @@ const getBaseNumerals = (typeResultNumber) => {
     }
   }
 };
-
-
-// ___ private use .. ___ //
-const detectedType = (number, type) => {
-  let detectedResult = [] ; 
-  (number.split('')).forEach(element => {
-    let res = getBaseNumerals(type).filter( value => value === element );
-    if ( res.length !== 0 ) {
-    detectedResult.push(res) ;
-    } 
-  });
-  
-  return detectedResult ;
-};
-// _____________________ //
 
 
 const detecteNumeralTypeOfInput = (number) => {

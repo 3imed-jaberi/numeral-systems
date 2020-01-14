@@ -1,7 +1,7 @@
 const { getBaseNumerals, detecteNumeralTypeOfInput } = require ('../utils');
 const { DecimalToRomain } = require ('./decimalToRomain');
 const { RomainToDecimal } = require ('./romainToDecimal');
-const { __ARABIC__, __MODERN__, __PERSIAN__,  __ROMAIN__ } = require('../constants');
+const { __ARABIC__, __MODERN__, __PERSIAN__,  __ROMAIN__, __ERROR_ROMAIN__ } = require('../constants');
 
 
 
@@ -13,7 +13,7 @@ const convert = (number, typeResultNumerals) => {
   if ((typeResultNumerals === __ROMAIN__) && (detecteNumeralTypeOfInput(number) !== __ROMAIN__)){
     return ((+number < 1) || (+number > 3999) 
                             ? 
-       new Error('Error .. invalid romain number < the numbers should be in [ 1 .. 3999 ] >').message
+       new Error(__ERROR_ROMAIN__).message
                             :
        DecimalToRomain(convert(number, __MODERN__)));
   }else if (detecteNumeralTypeOfInput(number) === __ROMAIN__) {
