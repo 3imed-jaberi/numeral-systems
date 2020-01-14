@@ -1,27 +1,55 @@
+const { persian, arabic, modern, romain, all } = require('../data.json');
 
-const getBaseNumerals = require ('../data');
 
-const detectedType = (number , type) => {
-        let detectedResult = [] ; 
-        (number.split('')).forEach(element => {
-                let res = getBaseNumerals(type).filter( value => value === element );
-                if ( res.length !== 0 ) {
-                detectedResult.push(res) ;
-                } 
-        });
-    return detectedResult ;
+
+const getBaseNumerals = (typeResultNumber) => {
+  switch (typeResultNumber.toLowerCase()) {
+    case "persian" : {
+      return persian;
+    }
+    case "arabic" : {
+      return arabic;
+    }
+    case "modern" : {
+      return modern;
+    }
+    case "romain" : {
+      return romain; 
+    }
+    default : {
+      return all;
+    }
+  }
 };
+
+
+// ___ private use .. ___ //
+const detectedType = (number , type) => {
+  let detectedResult = [] ; 
+  (number.split('')).forEach(element => {
+    let res = getBaseNumerals(type).filter( value => value === element );
+    if ( res.length !== 0 ) {
+    detectedResult.push(res) ;
+    } 
+  });
+  
+  return detectedResult ;
+};
+// _____________________ //
+
 
 const detecteNumeralTypeOfInput = (number) => {
-        if (detectedType(number,'modern').length !== 0 ) {
-            return 'modern' ; 
-        } else if (detectedType(number,'romain').length !== 0){ // other letter .. 
-            return 'romain';
-        } else if (detectedType(number,'persian').length > detectedType(number,'arabic').length ) {
-            return 'persian';
-        }else {
-            return 'arabic';
-        }     
+  if (detectedType(number, 'modern').length !== 0){
+    return 'modern'; 
+  } else if (detectedType(number, 'romain').length !== 0){
+    return 'romain';
+  } else if (detectedType(number, 'persian').length > detectedType(number, 'arabic').length){
+    return 'persian';
+  }else {
+    return 'arabic';
+  } 
 };
 
-module.exports = detecteNumeralTypeOfInput ;
+
+
+module.exports = { detecteNumeralTypeOfInput, getBaseNumerals };

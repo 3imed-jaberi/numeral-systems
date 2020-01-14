@@ -1,5 +1,4 @@
-const getBaseNumerals = require('../data');
-const detecteNumeralTypeOfInput = require ('../utils');
+const { getBaseNumerals, detecteNumeralTypeOfInput } = require ('../utils');
 const { DecimalToRomain } = require ('./decimalToRomain');
 const { RomainToDecimal } = require ('./romainToDecimal');
 
