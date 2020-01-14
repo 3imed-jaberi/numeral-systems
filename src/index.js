@@ -6,7 +6,7 @@ const validationInputNumerals = require ('./validation');
 const main = (number, typeResultNumerals ) => {
   // validate the number .. // you cna passing number or string
   if (validationInputNumerals(number) === -1) {
-    return "Error .. invalid number !!" ;
+    return new Error('Error .. invalid number !!').message;
   }  
 
   return convert(number,typeResultNumerals);
