@@ -89,7 +89,7 @@ describe(
 
      it ('romain Error', () => {
           let result = package ('45000','romain') ; 
-          expect(result).to.equal('Error .. invalid romain number < the numbers should be in [  1 .. 3999 ] >');
+          expect(result).to.equal('Error .. invalid romain number < the numbers should be in [ 1 .. 3999 ] >');
      });
 
      it ('Input Error', () => {
