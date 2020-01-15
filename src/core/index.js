@@ -1,6 +1,5 @@
+const { DecimalToRomain, RomainToDecimal } = require ('./romain convert');
 const { getBaseNumerals, detecteNumeralTypeOfInput } = require ('../utils');
-const { DecimalToRomain } = require ('./decimalToRomain');
-const { RomainToDecimal } = require ('./romainToDecimal');
 const { __ARABIC__, __MODERN__, __PERSIAN__,  __ROMAIN__, __ERROR_ROMAIN__ } = require('../constants');
 
 

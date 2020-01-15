@@ -1,4 +1,4 @@
-const convert = require('./core/numeralSystemConvert');
+const convert = require('./core');
 const validationInputNumerals = require ('./validation');
 const { __ERROR_INVALID__ } = require('./constants');
 
