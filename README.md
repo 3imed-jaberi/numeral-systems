@@ -8,8 +8,9 @@
 
 #### The purpose of this module is to convert any type of numbers to other type you want ..  
 
-###### **`NOTE:`** you can send to me for add other type in [instgram](https://www.instagram.com/3imed_jaberi/) ..
-
+>
+> Note: the package is lightweight but the attached picture is what makes the unit reach more than 400kb ..
+>
 
 ## Installation 
 ---
