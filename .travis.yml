@@ -1,8 +1,13 @@
-language : node_js
-node_js :
- - stable
-install:
- - npm install
-script:  
- - npm run ci
-after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
+language: node_js
+node_js:
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+script:
+  - npm run ci
+after_script:
+  - npm i coveralls
+  - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
