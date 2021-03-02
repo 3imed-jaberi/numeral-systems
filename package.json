@@ -1,47 +1,71 @@
 {
   "name": "numeral-systems",
-  "version": "2.0.0",
-  "description": " The purpose of this module is to convert any type of numbers to other type you want .. 🔢 ",
+  "version": "3.0.0",
+  "description": "Convert any type of numbers to other type you want. 🔢",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec",
-    "ci": "npm run cover",
-    "postversion": "git push && git push --tags",
-    "prepublishOnly": "npm run ci",
-    "preversion": "npm run ci"
-  },
+  "files": [
+    "index.js",
+    "data.json",
+    "consts.json"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/3imed-jaberi/numeral-systems.git"
   },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "mocha index.spec.js --exit",
+    "precoverage": "rimraf .nyc_output coverage",
+    "coverage": "nyc npm run test",
+    "ci": "npm run coverage",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm run ci",
+    "preversion": "npm run ci"
+  },
   "keywords": [
+    "numeral-systems",
     "numeral-systems-convert",
-    "numbers",
     "numerals",
+    "numbers",
     "arabic",
-    "romain",
+    "khmer",
+    "lao",
+    "modern",
     "persian",
-    "modern"
+    "romain",
+    "thai"
   ],
   "author": {
     "name": "imed jaberi",
-    "email": "3imed.jaberi@gmail.com"
+    "email": "imed-jaberi@outlook.com",
+    "url": "https://www.3imed-jaberi.com"
   },
+  "contributors": [
+    {
+      "name": "Oleg Kovalov",
+      "email": "oleg@hey.com",
+      "url": "https://olegk.dev"
+    }
+  ],
   "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.1",
+    "eslint": "^7.21.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "mocha": "^8.3.0",
+    "nyc": "^15.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
   "bugs": {
     "url": "https://github.com/3imed-jaberi/numeral-systems/issues"
   },
-  "homepage": "https://github.com/3imed-jaberi/numeral-systems#readme",
-  "devDependencies": {
-    "mocha": "^5.2.0",
-    "chai": "^4.2.0",
-    "coveralls": "^3.0.6",
-    "istanbul": "^0.4.5"
-  },
-  "engines": {
-    "node": ">= 10.12.0",
-    "npm": ">= 6.9.0",
-    "yarn": ">= 1.16.0"
-  }
+  "homepage": "https://github.com/3imed-jaberi/numeral-systems#readme"
 }
