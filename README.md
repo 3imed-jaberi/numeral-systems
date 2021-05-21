@@ -32,9 +32,9 @@
 
 ```bash
 # npm
-$ npm install koa-better-boom
+$ npm install numeral-systems
 # yarn
-$ yarn add koa-better-boom
+$ yarn add numeral-systems
 ```
 
 ## `Usage`
