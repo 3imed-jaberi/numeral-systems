@@ -6,7 +6,8 @@
   "files": [
     "index.js",
     "data.json",
-    "consts.json"
+    "consts.json",
+    "payload.json"
   ],
   "repository": {
     "type": "git",
