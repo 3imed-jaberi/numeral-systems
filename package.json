@@ -1,11 +1,10 @@
 {
   "name": "numeral-systems",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Convert any type of numbers to other type you want. 🔢",
   "main": "index.js",
   "files": [
     "index.js",
-    "data.json",
     "consts.json",
     "payload.json"
   ],
