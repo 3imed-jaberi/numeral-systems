@@ -1,15 +1,14 @@
 const { expect } = require('chai')
 
 const pkg = require('.')
-const {
-  __ARABIC__,
-  __KHMER__,
-  __LAO__,
-  __MODERN__,
-  __PERSIAN__,
-  __ROMAIN__,
-  __THAI__
-} = require('./consts.json')
+
+const __ARABIC__ = 'arabic'
+const __KHMER__ = 'khmer'
+const __LAO__ = 'lao'
+const __MODERN__ = 'modern'
+const __PERSIAN__ = 'persian'
+const __ROMAIN__ = 'romain'
+const __THAI__ = 'thai'
 
 describe('numeral-systems', () => {
   // arabic
