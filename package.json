@@ -1,12 +1,11 @@
 {
   "name": "numeral-systems",
-  "version": "3.1.0",
-  "description": "Convert any type of numbers to other type you want. 🔢",
+  "version": "3.2.0",
+  "description": "easy, blaze and tiny module to convert any type of numbers to other type you want.",
   "main": "index.js",
   "files": [
     "index.js",
-    "consts.json",
-    "payload.json"
+    "base_numerals.json"
   ],
   "repository": {
     "type": "git",
@@ -46,6 +45,11 @@
       "name": "Oleg Kovalov",
       "email": "oleg@hey.com",
       "url": "https://olegk.dev"
+    },
+    {
+      "name": "Ukang'a Dickson",
+      "email": "",
+      "url": "https://github.com/ukanga"
     }
   ],
   "license": "MIT",
