@@ -21,12 +21,11 @@
 [license-badge]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
 [license-url]: https://github.com/3imed-jaberi/numeral-systems/blob/master/LICENSE
 [code-size-badge]: https://img.shields.io/github/languages/code-size/3imed-jaberi/numeral-systems
+[new-issue]: https://github.com/3imed-jaberi/numeral-systems/issues/new
 
 <!-- ***************** -->
 
-#### The purpose of this module is to convert any type of numbers to other type you want.
-
-> Note: the package is lightweight but the attached picture is what makes the unit reach more than 400kb ..
+#### Easy, blaze and tiny module to convert any type of numbers to other type you want.
 
 ## `Installation`
 
@@ -74,6 +73,10 @@ In this module we have 7 numerals systems. You can convert between them ..
 - Thai : ๐ , ๑ , ๒ , ๓ , ๔ , ๕ , ๖ , ๗ , ๘ , ๙ ...
 
 **`NOTE:`** Al-Khwarizmi put the modern numeral system for that is considered the original Arabic and this for the scientific secretariat, but we relied on the Arabic numerals very old under the name "Arabic" and the numerls system developed by Al-Khwarizmi "modern" ...
+
+## `Support`
+
+If you have any problem or suggestion please open an [issue][new-issue].
 
 #### `License`
 
