@@ -1,6 +1,6 @@
 {
   "name": "numeral-systems",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "easy, blaze and tiny module to convert any type of numbers to other type you want.",
   "main": "index.js",
   "files": [
@@ -48,7 +48,6 @@
     },
     {
       "name": "Ukang'a Dickson",
-      "email": "",
       "url": "https://github.com/ukanga"
     }
   ],
