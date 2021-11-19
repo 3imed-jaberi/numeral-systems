@@ -1,7 +1,6 @@
 /*!
  * numeral-systems
  *
- *
  * Copyright(c) 2019-2021 Imed Jaberi
  * MIT Licensed
  */
@@ -11,11 +10,13 @@
 /**
  * Modules as JSON files.
  */
+
 const BASE_NUMERALS = require('./base_numerals.json')
 
 /**
  * const global types
  */
+
 const __ALL__ = 'all'
 const __ARABIC__ = 'arabic'
 const __KHMER__ = 'khmer'
@@ -31,6 +32,7 @@ const __THAI__ = 'thai'
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
  * @api private
  */
+
 function flat (array) {
   // we don't need valdiation here because we use it internel.
   return process.version.startsWith('v10')
@@ -43,6 +45,7 @@ function flat (array) {
  *
  * @api private
  */
+
 function getBaseNumerals (typeResultNumber) {
   return BASE_NUMERALS[typeResultNumber]
 }
@@ -52,6 +55,7 @@ function getBaseNumerals (typeResultNumber) {
  *
  * @api private
  */
+
 function getType (number) {
   const inputNumberList = number.toString().split('')
   // const specialPersianNumbersOverArabic = ['۴', '۵', '۶']
@@ -93,6 +97,7 @@ function getType (number) {
  *
  * @api private
  */
+
 function isRomainType (value) {
   return value === __ROMAIN__
 }
@@ -102,6 +107,7 @@ function isRomainType (value) {
  *
  * @api private
  */
+
 function decimalToRomain (number) {
   const result = []
   const {
@@ -128,7 +134,8 @@ function decimalToRomain (number) {
  *
  * @api private
  */
-const romainToDecimal = (number) => {
+
+function romainToDecimal (number) {
   const {
     romain_raw: {
       chiffre: decimal,
@@ -162,6 +169,7 @@ const romainToDecimal = (number) => {
  *
  * @api private
  */
+
 function convertHandler (number, typeResultNumerals) {
   if (isRomainType(typeResultNumerals) && !isRomainType(getType(number))) {
     if (+number < 1 || +number > 3999) {
@@ -211,6 +219,7 @@ function convertHandler (number, typeResultNumerals) {
  *
  * @api private
  */
+
 function isSupportedNumber (number) {
   const allNumeralsSystem = flat(getBaseNumerals(__ALL__))
   const inputNumberList = number.toString().split('')
@@ -226,6 +235,7 @@ function isSupportedNumber (number) {
  *
  * @api public
  */
+
 function numeralSystems (number, typeResultNumerals) {
   if (!isSupportedNumber(number)) {
     throw new Error(
